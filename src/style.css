@@ -1,0 +1,94 @@
+section {
+  border: 12px solid #75597d;
+  border-radius: 35px;
+  opacity: 95%;
+  box-shadow: 5px 5px 5px #75597d;
+  max-width: 800px;
+  margin: 30px auto 0;
+  font-family: "Inconsolata", cursive;
+  padding: 15px;
+  background: linear-gradient(
+    104.3deg,
+    rgb(253, 243, 243) 10.9%,
+    rgb(248, 231, 231) 27.8%,
+    rgb(160, 112, 161) 101.7%
+  );
+}
+
+h1 {
+  padding: 30px;
+  padding-left: 50px;
+}
+
+.search-input {
+  background-color: #d4a2be;
+  border: 8px solid#d4a2be;
+  border-radius: 20px;
+  font-size: 20px;
+  color: #75597d;
+  box-shadow: 3px 3px 3px #75597d;
+}
+
+.button {
+  color: #f8e4dd;
+  border: 8px solid #75597d;
+  background-color: #75597d;
+  border-radius: 20px;
+  font-size: 20px;
+  box-shadow: 3px 3px 3px #75597d;
+  transition: all 200ms ease-in-out;
+}
+.button:hover {
+  background: linear-gradient(
+    104.3deg,
+    rgb(253, 243, 243) 10.9%,
+    rgb(248, 231, 231) 27.8%,
+    rgb(160, 112, 161) 101.7%
+  );
+  color: #75597d;
+}
+.city {
+  padding-top: 30px;
+}
+.city,
+.today,
+.time,
+.temperature,
+.search-box,
+.humidity,
+.wind-speed,
+.description {
+  padding-left: 30px;
+}
+.image {
+  width: 250px;
+  display: inline-flex;
+  position: relative;
+  left: 420px;
+  bottom: 150px;
+  margin-bottom: -120px;
+}
+
+.icon {
+  font-size: 18px;
+  color: #75597d;
+}
+.card {
+  font-size: 10px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.card-body {
+  background: linear-gradient(
+    104.3deg,
+    rgb(253, 243, 243) 10.9%,
+    rgb(248, 231, 231) 27.8%,
+    rgb(160, 112, 161) 101.7%
+  );
+  border-radius: 30px;
+  border: 5px solid #d4a2be;
+  box-shadow: 3px 3px 3px #75597d;
+}
