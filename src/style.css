@@ -60,6 +60,12 @@ h1 {
 .description {
   padding-left: 30px;
 }
+
+.description {
+  text-transform: capitalize;
+  font-weight: 800;
+  color: #75597d;
+}
 .image {
   width: 250px;
   display: inline-flex;
