@@ -61,10 +61,7 @@ function showTemperature(response) {
   document.querySelector("#city").innerHTML = response.data.name;
 
   let iconElement = document.querySelector("#today-icon");
-  iconElement.setAttribute(
-    "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.svg`
-  );
+  iconElement.setAttribute("src", `src/${response.data.weather[0].icon}.svg`);
 }
 
 function showPosition(position) {
