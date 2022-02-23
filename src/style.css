@@ -66,24 +66,24 @@ h1 {
   font-weight: 800;
   color: #75597d;
 }
-.image {
-  width: 250px;
-  display: inline-flex;
-  position: relative;
-  left: 420px;
-  bottom: 150px;
-  margin-bottom: -120px;
+.wind-speed {
+  padding-bottom: 20px;
 }
 
-.icon {
-  font-size: 18px;
+.image {
+  color: rgb(160, 112, 161);
+  width: 200px;
+}
+
+i {
+  font-size: 20px;
   color: #75597d;
 }
 .card {
   font-size: 10px;
 }
 
-p {
+.card-text {
   font-size: 20px;
 }
 
