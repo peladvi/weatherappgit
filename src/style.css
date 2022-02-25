@@ -32,6 +32,7 @@ h1 {
 .search-input:focus-visible {
   outline: none;
 }
+
 .button {
   color: #f8e4dd;
   border: 8px solid #75597d;
@@ -74,8 +75,8 @@ h1 {
 }
 
 .image {
-  color: rgb(160, 112, 161);
   width: 200px;
+  padding-top: 20px;
 }
 
 i {
