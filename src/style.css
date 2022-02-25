@@ -50,6 +50,7 @@ h1 {
     rgb(160, 112, 161) 101.7%
   );
   color: #75597d;
+  border: none;
 }
 .city {
   padding-top: 30px;
