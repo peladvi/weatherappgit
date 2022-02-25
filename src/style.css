@@ -29,6 +29,9 @@ h1 {
   box-shadow: 3px 3px 3px #75597d;
 }
 
+.search-input:focus-visible {
+  outline: none;
+}
 .button {
   color: #f8e4dd;
   border: 8px solid #75597d;
