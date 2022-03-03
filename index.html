@@ -60,7 +60,7 @@
             <h2>
               <span class="temperature" id="temperature">temp</span>
               <span class="units">
-                <a href="#" id="celsius-link" class="active">°C</a>|<a
+                <a href="#" id="celsius-link" class="active" class="C">°C</a>|<a
                   href="#"
                   id="fahrenheit-link"
                   class="F"
@@ -68,68 +68,18 @@
                 ></span
               >
             </h2>
-            <div class="description" id="description"></div>
+            <strong class="description" id="description"></strong>
             <div class="humidity" id="humidity"></div>
             <div class="wind-speed" id="wind-speed"></div>
           </div>
+
           <div class="col-6">
             <div>
               <img src="" class="image" id="today-icon" />
             </div>
           </div>
         </div>
-
-        <div class="row row-cols-5">
-          <div class="col">
-            <div class="first">
-              <div class="card-body">
-                <h5 class="card-title">Wednesday</h5>
-                <i class="fas fa-cloud-sun icon"></i>
-                <p class="card-text">6°C</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="second">
-              <div class="card-body">
-                <h5 class="card-title">Thursday</h5>
-                <i class="fas fa-snowflake icon"></i>
-                <p class="card-text">4°C</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="third">
-              <div class="card-body">
-                <h5 class="card-title">Friday</h5>
-                <i class="fas fa-cloud icon"></i>
-                <p class="card-text">-2°C</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="fourth">
-              <div class="card-body">
-                <h5 class="card-title">Saturday</h5>
-                <i class="fas fa-cloud-sun icon"></i>
-                <p class="card-text">-3°C</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="fith">
-              <div class="card-body">
-                <h5 class="card-title">Sunday</h5>
-                <i class="fas fa-cloud-sun icon"></i>
-                <p class="card-text">1°C</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="forecast" id="forecast"></div>
         <br />
       </section>
 

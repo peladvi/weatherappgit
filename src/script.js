@@ -41,6 +41,33 @@ function submit(event) {
 let form = document.querySelector("form");
 form.addEventListener("submit", submit);
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row row-cols-5">`;
+  let days = ["Wed", "Thu", "Fri"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+       
+         <div class="col">
+           <div class="card-body">
+             <h5 class="forecast-date">${day}</h5>
+             <i class="fas fa-cloud-sun icon"></i>
+             <p class="card-text">
+               <span class="forecast-temperature-max">6°C</span>
+               <span class="forecast-temperature-min"> 2°C</span>
+             </p>
+           </div>
+         </div>
+       `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function showTemperature(response) {
   celsiusTemperature = response.data.main.temp;
   document.querySelector("#temperature").innerHTML = Math.round(
@@ -101,3 +128,4 @@ let celsiustLink = document.querySelector("#celsius-link");
 celsiustLink.addEventListener("click", showCelsiusTemp);
 
 searchCity("Cracow");
+displayForecast();
