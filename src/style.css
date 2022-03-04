@@ -1,7 +1,7 @@
 section {
   border: 12px solid #75597d;
   border-radius: 35px;
-  opacity: 95%;
+
   box-shadow: 5px 5px 5px #75597d;
   max-width: 800px;
   margin: 30px auto 0;
@@ -25,10 +25,9 @@ h1 {
   border: 8px solid#d4a2be;
   border-radius: 20px;
   font-size: 20px;
-  color: #75597d;
+
   box-shadow: 3px 3px 3px #75597d;
 }
-
 .search-input:focus-visible {
   outline: none;
 }
@@ -68,8 +67,8 @@ h1 {
 
 .description {
   text-transform: capitalize;
-  font-weight: 800;
   color: #75597d;
+  font-weight: bolder;
 }
 .wind-speed {
   padding-bottom: 20px;
@@ -80,42 +79,34 @@ h1 {
   padding-top: 20px;
 }
 
-i {
-  font-size: 20px;
-  color: #75597d;
-}
-.card {
-  font-size: 10px;
-}
-
-.card-text {
-  font-size: 20px;
-}
-
 .card-body {
+  background: linear-gradient(
+    104.3deg,
+    rgb(160, 112, 161) 10.9%,
+    rgb(248, 231, 231) 47.8%,
+    rgb(253, 243, 243) 101.7%
+  );
+
+  border-radius: 30px;
+  border: 6px solid #d4a2be;
+  box-shadow: 3px 3px 3px #75597d;
+  text-align: center;
+}
+
+.card-body:hover {
   background: linear-gradient(
     104.3deg,
     rgb(253, 243, 243) 10.9%,
     rgb(248, 231, 231) 27.8%,
     rgb(160, 112, 161) 101.7%
   );
-  border-radius: 30px;
-  border: 5px solid #d4a2be;
-  box-shadow: 3px 3px 3px #75597d;
-  text-align: center;
 }
-
 footer {
   display: block;
   margin: 0 auto;
   max-width: 800px;
   font-family: "Times New Roman", Times, serif;
   margin-top: 10px;
-}
-
-.F,
-.C {
-  text-decoration: none;
 }
 
 .active {
@@ -126,4 +117,12 @@ footer {
 .active:hover {
   color: black;
   text-decoration: none;
+}
+.F,
+.C {
+  text-decoration: none;
+}
+
+.forecast-temperature-min {
+  opacity: 65%;
 }
