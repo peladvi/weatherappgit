@@ -41,27 +41,49 @@ function submit(event) {
 let form = document.querySelector("form");
 form.addEventListener("submit", submit);
 
+function formatDay(dailytemp) {
+  let date = new Date(dailytemp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day];
+}
+
 function displayForecast(response) {
+  let forecast = response.data.daily;
+
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row row-cols-5">`;
-  let days = ["Wed", "Thu", "Fri"];
-  days.forEach(function (day) {
-    forecastHTML =
-      forecastHTML +
-      `
+  forecast.forEach(function (forecastDay, index) {
+    if (
+      index === 1 ||
+      index === 2 ||
+      index === 3 ||
+      index === 4 ||
+      index === 5
+    ) {
+      forecastHTML =
+        forecastHTML +
+        `
        
          <div class="col">
            <div class="card-body">
-             <h5 class="forecast-date">${day}</h5>
-             <i class="fas fa-cloud-sun icon"></i>
-             <p class="card-text">
-               <span class="forecast-temperature-max">6°C</span>
-               <span class="forecast-temperature-min"> 2°C</span>
-             </p>
+             <h5 class="forecast-date">${formatDay(forecastDay.dt)}</h5>
+             <img src= "src/${forecastDay.weather[0].icon}.svg"
+             width= "50"/>
+            <div>
+               <span class="forecast-temperature-max">${Math.round(
+                 forecastDay.temp.max
+               )}°C</span>
+               <span class="forecast-temperature-min">${Math.round(
+                 forecastDay.temp.min
+               )}°C</span>
+            </div>
            </div>
          </div>
        `;
+    }
   });
 
   forecastHTML = forecastHTML + `</div>`;
@@ -135,4 +157,4 @@ fahrenheitLink.addEventListener("click", showFahrenheitTemp);
 let celsiustLink = document.querySelector("#celsius-link");
 celsiustLink.addEventListener("click", showCelsiusTemp);
 
-searchCity("Cracow");
+searchCity("Warsaw");
