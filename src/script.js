@@ -133,28 +133,4 @@ function getCurrentLocation(event) {
 let button = document.querySelector("#button");
 button.addEventListener("click", getCurrentLocation);
 
-function showFahrenheitTemp(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  celsiustLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-  let fahreinheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahreinheitTemperature);
-}
-
-function showCelsiusTemp(event) {
-  event.preventDefault();
-  celsiustLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
-}
-let celsiusTemperature = null;
-
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", showFahrenheitTemp);
-
-let celsiustLink = document.querySelector("#celsius-link");
-celsiustLink.addEventListener("click", showCelsiusTemp);
-
 searchCity("Warsaw");

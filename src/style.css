@@ -109,20 +109,6 @@ footer {
   margin-top: 10px;
 }
 
-.active {
-  color: black;
-  cursor: default;
-  text-decoration: none;
-}
-.active:hover {
-  color: black;
-  text-decoration: none;
-}
-.F,
-.C {
-  text-decoration: none;
-}
-
 .forecast-temperature-min {
   opacity: 65%;
 }
