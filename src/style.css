@@ -108,7 +108,9 @@ footer {
   font-family: "Times New Roman", Times, serif;
   margin-top: 10px;
 }
-
+footer a {
+  color: #d4a2be;
+}
 .forecast-temperature-min {
   opacity: 65%;
 }
