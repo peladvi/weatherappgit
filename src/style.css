@@ -1,7 +1,6 @@
 section {
   border: 12px solid #75597d;
   border-radius: 35px;
-
   box-shadow: 5px 5px 5px #75597d;
   max-width: 800px;
   margin: 30px auto 0;
@@ -22,7 +21,7 @@ h1 {
 
 .search-input {
   background-color: #d4a2be;
-  border: 8px solid#d4a2be;
+  border: 8px solid #d4a2be;
   border-radius: 20px;
   font-size: 20px;
 

@@ -54,7 +54,7 @@ function displayForecast(response) {
 
   let forecastElement = document.querySelector("#forecast");
 
-  let forecastHTML = `<div class="row row-cols-5">`;
+  let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
     if (
       index === 1 ||
@@ -67,11 +67,11 @@ function displayForecast(response) {
         forecastHTML +
         `
        
-         <div class="col">
+         <div class="col-sm">
            <div class="card-body">
              <h5 class="forecast-date">${formatDay(forecastDay.dt)}</h5>
              <img src= "src/${forecastDay.weather[0].icon}.svg"
-             width= "50"/>
+             width="50"/>
             <div>
                <span class="forecast-temperature-max">${Math.round(
                  forecastDay.temp.max
