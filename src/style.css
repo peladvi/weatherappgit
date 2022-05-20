@@ -24,7 +24,6 @@ h1 {
   border: 8px solid #d4a2be;
   border-radius: 20px;
   font-size: 20px;
-
   box-shadow: 3px 3px 3px #75597d;
 }
 .search-input:focus-visible {
@@ -112,4 +111,9 @@ footer a {
 }
 .forecast-temperature-min {
   opacity: 65%;
+}
+@media (max-width: 400px) {
+  h1 {
+    font-size: 15px;
+  }
 }
